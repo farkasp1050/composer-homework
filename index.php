@@ -2,5 +2,8 @@
 
 declare(strict_types=1);
 
-echo "Hello!";
+require __DIR__ . '/vendor/autoload.php';
 
+use Symfony\Component\VarDumper\VarDumper;
+
+VarDumper::dump("Hello!");
