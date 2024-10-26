@@ -8,6 +8,6 @@ use Symfony\Component\VarDumper\VarDumper;
 use Symfony\Component\Dotenv\Dotenv;
 
 $dotenv = new Dotenv();
-$dotenv->load(__DIR__ . '/.env');
+$dotenv->load(__DIR__ . '/test.env');
 
 VarDumper::dump($_ENV);
